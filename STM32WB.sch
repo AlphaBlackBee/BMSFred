@@ -1,0 +1,1238 @@
+EESchema Schematic File Version 4
+LIBS:BattFred-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 5D678316
+P 1450 7000
+F 0 "#PWR0101" H 1450 6750 50  0001 C CNN
+F 1 "GND" H 1455 6827 50  0000 C CNN
+F 2 "" H 1450 7000 50  0001 C CNN
+F 3 "" H 1450 7000 50  0001 C CNN
+	1    1450 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5D67E2B1
+P 1250 6650
+F 0 "L1" V 1440 6650 50  0000 C CNN
+F 1 "1.4 2.7nH" V 1349 6650 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 1250 6650 50  0001 C CNN
+F 3 "" H 1250 6650 50  0001 C CNN
+	1    1250 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5D67A29D
+P 1450 6850
+F 0 "C2" H 1568 6896 50  0000 L CNN
+F 1 "0.3pF" H 1568 6805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1488 6700 50  0001 C CNN
+F 3 "" H 1450 6850 50  0001 C CNN
+	1    1450 6850
+	1    0    0    -1  
+$EndComp
+Text GLabel 750  6650 0    50   Input ~ 0
+RF1
+$Comp
+L Device:C C1
+U 1 1 5D67B217
+P 1050 6850
+F 0 "C1" H 850 6900 50  0000 L CNN
+F 1 "0.8pF" H 750 6800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1088 6700 50  0001 C CNN
+F 3 "" H 1050 6850 50  0001 C CNN
+	1    1050 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5D679675
+P 1050 7000
+F 0 "#PWR0103" H 1050 6750 50  0001 C CNN
+F 1 "GND" H 1055 6827 50  0000 C CNN
+F 2 "" H 1050 7000 50  0001 C CNN
+F 3 "" H 1050 7000 50  0001 C CNN
+	1    1050 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal32Mh:NX2016SA-32M-EXS00A-CS06465 Y1
+U 1 1 5D7538C6
+P 1350 5800
+F 0 "Y1" H 1950 6065 50  0000 C CNN
+F 1 "NX2016SA-32M-EXS00A-CS06465" H 1950 5974 50  0000 C CNN
+F 2 "MyPinout:NX2016SA32MEXS00ACS06465" H 2400 5900 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/NX2016SA-32M-EXS00A-CS06465.pdf" H 2400 5800 50  0001 L CNN
+F 4 "CRYSTAL 32MHZ 10PF SMD" H 2400 5700 50  0001 L CNN "Description"
+F 5 "0" H 2400 5600 50  0001 L CNN "Height"
+F 6 "344-NX2016SA32S06465" H 2400 5500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=344-NX2016SA32S06465" H 2400 5400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "NDK" H 2400 5300 50  0001 L CNN "Manufacturer_Name"
+F 9 "NX2016SA-32M-EXS00A-CS06465" H 2400 5200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1350 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5D754F6C
+P 2550 5900
+F 0 "#PWR0104" H 2550 5650 50  0001 C CNN
+F 1 "GND" H 2555 5727 50  0000 C CNN
+F 2 "" H 2550 5900 50  0001 C CNN
+F 3 "" H 2550 5900 50  0001 C CNN
+	1    2550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5D755429
+P 1350 5900
+F 0 "#PWR0105" H 1350 5650 50  0001 C CNN
+F 1 "GND" H 1355 5727 50  0000 C CNN
+F 2 "" H 1350 5900 50  0001 C CNN
+F 3 "" H 1350 5900 50  0001 C CNN
+	1    1350 5900
+	1    0    0    -1  
+$EndComp
+Text GLabel 2550 5800 2    50   Input ~ 0
+PF0_OUT_32MHZ
+Text GLabel 1350 5800 0    50   Input ~ 0
+PF0_IN_32MHZ
+$Comp
+L Device:C C15
+U 1 1 5D7888E4
+P 10100 1250
+F 0 "C15" V 10050 1300 50  0000 L CNN
+F 1 "100nF" V 9950 1200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10450 1300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/C0805X104K4RACAUTO.pdf" H 10450 1200 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 0.1uF X7R 0805 10% AEC-Q200" H 10450 1100 50  0001 L CNN "Description"
+F 5 "0.98" H 10450 1000 50  0001 L CNN "Height"
+F 6 "80-C0805X104K4RAUTO" H 10450 900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805X104K4RAUTO" H 10450 800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 10450 700 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805X104K4RACAUTO" H 10450 600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10100 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5D78F989
+P 9800 1250
+F 0 "C12" V 9750 1300 50  0000 L CNN
+F 1 "100nF" V 9650 1200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10150 1300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/C0805X104K4RACAUTO.pdf" H 10150 1200 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 0.1uF X7R 0805 10% AEC-Q200" H 10150 1100 50  0001 L CNN "Description"
+F 5 "0.98" H 10150 1000 50  0001 L CNN "Height"
+F 6 "80-C0805X104K4RAUTO" H 10150 900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805X104K4RAUTO" H 10150 800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 10150 700 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805X104K4RACAUTO" H 10150 600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9800 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5D7900A1
+P 9500 1250
+F 0 "C11" V 9450 1300 50  0000 L CNN
+F 1 "100nF" V 9350 1200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9850 1300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/C0805X104K4RACAUTO.pdf" H 9850 1200 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 0.1uF X7R 0805 10% AEC-Q200" H 9850 1100 50  0001 L CNN "Description"
+F 5 "0.98" H 9850 1000 50  0001 L CNN "Height"
+F 6 "80-C0805X104K4RAUTO" H 9850 900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805X104K4RAUTO" H 9850 800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 9850 700 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805X104K4RACAUTO" H 9850 600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9500 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5D79B166
+P 9500 1500
+F 0 "#PWR0106" H 9500 1250 50  0001 C CNN
+F 1 "GND" H 9505 1327 50  0000 C CNN
+F 2 "" H 9500 1500 50  0001 C CNN
+F 3 "" H 9500 1500 50  0001 C CNN
+	1    9500 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 10950 1000 2    50   Output ~ 0
+VCC
+Wire Wire Line
+	9500 1000 9500 800 
+Connection ~ 9500 1000
+$Comp
+L Rescue:LFL212G45TC1A007-SamacSys_Parts FLT1
+U 1 1 5D82731A
+P 2150 6600
+F 0 "FLT1" H 2150 6815 50  0000 C CNN
+F 1 "LFL212G45TC1A007" H 2150 6724 50  0000 C CNN
+F 2 "MyFilter:LFL212G45TC1A007" H 2150 6650 50  0001 C CNN
+F 3 "" H 2150 6650 50  0001 C CNN
+	1    2150 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5D856C89
+P 8050 1250
+F 0 "C9" V 8100 1000 50  0000 L CNN
+F 1 "4.7uF" V 8200 1100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8400 1300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/C0805X104K4RACAUTO.pdf" H 8400 1200 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 0.1uF X7R 0805 10% AEC-Q200" H 8400 1100 50  0001 L CNN "Description"
+F 5 "0.98" H 8400 1000 50  0001 L CNN "Height"
+F 6 "80-C0805X104K4RAUTO" H 8400 900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805X104K4RAUTO" H 8400 800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 8400 700 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805X104K4RACAUTO" H 8400 600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8050 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 1000 2    50   Output ~ 0
+VCCSMPS
+$Comp
+L power:GND #PWR0107
+U 1 1 5D85A767
+P 8050 1500
+F 0 "#PWR0107" H 8050 1250 50  0001 C CNN
+F 1 "GND" H 8055 1327 50  0000 C CNN
+F 2 "" H 8050 1500 50  0001 C CNN
+F 3 "" H 8050 1500 50  0001 C CNN
+	1    8050 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5D864C7D
+P 8050 3100
+F 0 "#PWR0108" H 8050 2850 50  0001 C CNN
+F 1 "GND" H 8055 2927 50  0000 C CNN
+F 2 "" H 8050 3100 50  0001 C CNN
+F 3 "" H 8050 3100 50  0001 C CNN
+	1    8050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L5
+U 1 1 5D896A9E
+P 9800 2150
+F 0 "L5" V 9619 2150 50  0000 C CNN
+F 1 "BLM31KN601SN1L" V 9700 2250 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 9800 2150 50  0001 C CNN
+F 3 "~" H 9800 2150 50  0001 C CNN
+	1    9800 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5D89759A
+P 10000 2650
+F 0 "#PWR0109" H 10000 2400 50  0001 C CNN
+F 1 "GND" H 10005 2477 50  0000 C CNN
+F 2 "" H 10000 2650 50  0001 C CNN
+F 3 "" H 10000 2650 50  0001 C CNN
+	1    10000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2050 9500 2150
+Wire Wire Line
+	9500 2150 9650 2150
+Text GLabel 10500 2150 2    50   Output ~ 0
+VCCA
+Wire Wire Line
+	8050 800  8050 1000
+Text GLabel 10850 3150 2    50   Output ~ 0
+VCCRF
+Wire Wire Line
+	9850 3150 9850 3100
+$Comp
+L power:GND #PWR0110
+U 1 1 5D6ABD90
+P 10300 3800
+F 0 "#PWR0110" H 10300 3550 50  0001 C CNN
+F 1 "GND" H 10305 3627 50  0000 C CNN
+F 2 "" H 10300 3800 50  0001 C CNN
+F 3 "" H 10300 3800 50  0001 C CNN
+	1    10300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5D6AB709
+P 9850 3800
+F 0 "#PWR0111" H 9850 3550 50  0001 C CNN
+F 1 "GND" H 9855 3627 50  0000 C CNN
+F 2 "" H 9850 3800 50  0001 C CNN
+F 3 "" H 9850 3800 50  0001 C CNN
+	1    9850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5D93A85C
+P 9850 3550
+F 0 "C13" V 10054 3678 50  0000 L CNN
+F 1 "100nF" V 10145 3678 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10200 3600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/C0805X104K4RACAUTO.pdf" H 10200 3500 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 0.1uF X7R 0805 10% AEC-Q200" H 10200 3400 50  0001 L CNN "Description"
+F 5 "0.98" H 10200 3300 50  0001 L CNN "Height"
+F 6 "80-C0805X104K4RAUTO" H 10200 3200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805X104K4RAUTO" H 10200 3100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 10200 3000 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805X104K4RACAUTO" H 10200 2900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9850 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 5D9400CA
+P 10300 3550
+F 0 "C16" V 10504 3678 50  0000 L CNN
+F 1 "100pF" V 10595 3678 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10650 3600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/C0805X104K4RACAUTO.pdf" H 10650 3500 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 0.1uF X7R 0805 10% AEC-Q200" H 10650 3400 50  0001 L CNN "Description"
+F 5 "0.98" H 10650 3300 50  0001 L CNN "Height"
+F 6 "80-C0805X104K4RAUTO" H 10650 3200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805X104K4RAUTO" H 10650 3100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 10650 3000 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805X104K4RACAUTO" H 10650 2900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10300 3550
+	-1   0    0    1   
+$EndComp
+Connection ~ 10400 1000
+Text GLabel 1100 1100 3    50   UnSpc ~ 0
+RDX
+Text GLabel 1200 1100 3    50   UnSpc ~ 0
+TDX
+$Comp
+L Rescue:LL3301FF065QJ-SwitchPerso1 S1
+U 1 1 5D7CF558
+P 1200 2400
+F 0 "S1" H 1800 2550 50  0000 C CNN
+F 1 "WakeUp" H 1800 2650 50  0000 C CNN
+F 2 "MyPinout:TL3301EF100QG" H 2250 2500 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/LL3301FF065QJ.pdf" H 2250 2400 50  0001 L CNN
+F 4 "Pushbutton Switches 50mA 12VDC F065 7.0mm J-Lead" H 2250 2300 50  0001 L CNN "Description"
+F 5 "7.3" H 2250 2200 50  0001 L CNN "Height"
+F 6 "612-LL3301FF065QJ" H 2250 2100 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=612-LL3301FF065QJ" H 2250 2000 50  0001 L CNN "Mouser Price/Stock"
+F 8 "E-Switch" H 2250 1900 50  0001 L CNN "Manufacturer_Name"
+F 9 "LL3301FF065QJ" H 2250 1800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1200 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2850 2500 2    50   Output ~ 0
+USER
+Wire Wire Line
+	2400 2400 2400 2500
+Wire Wire Line
+	1200 2400 1200 2500
+Wire Wire Line
+	1200 2500 900  2500
+$Comp
+L power:GND #PWR0112
+U 1 1 5D7CF569
+P 900 2500
+F 0 "#PWR0112" H 900 2250 50  0001 C CNN
+F 1 "GND" H 905 2327 50  0000 C CNN
+F 2 "" H 900 2500 50  0001 C CNN
+F 3 "" H 900 2500 50  0001 C CNN
+	1    900  2500
+	-1   0    0    1   
+$EndComp
+Text GLabel 5200 4000 0    50   Input ~ 0
+RDX
+Text GLabel 5200 3900 0    50   Output ~ 0
+TDX
+Text GLabel 5600 2050 1    50   Input ~ 0
+VCC
+Text GLabel 7000 4000 2    50   Input ~ 0
+PF0_IN_32MHZ
+Text GLabel 6600 4900 3    50   Input ~ 0
+PF0_OUT_32MHZ
+Text GLabel 6500 4900 3    50   Input ~ 0
+VCCRF
+$Comp
+L power:GND #PWR0113
+U 1 1 5D74317B
+P 6400 5250
+F 0 "#PWR0113" H 6400 5000 50  0001 C CNN
+F 1 "GND" H 6405 5077 50  0000 C CNN
+F 2 "" H 6400 5250 50  0001 C CNN
+F 3 "" H 6400 5250 50  0001 C CNN
+	1    6400 5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 4900 3    50   Input ~ 0
+RF1
+Text GLabel 6200 4900 3    50   Input ~ 0
+VCC
+Text GLabel 5200 3200 0    50   Input ~ 0
+BOOT0
+Text GLabel 5200 3500 0    50   Input ~ 0
+NRST
+Text GLabel 7000 3100 2    50   Input ~ 0
+VCCSMPS
+Text GLabel 7000 3200 2    50   Input ~ 0
+VLXSMPS
+$Comp
+L power:GND #PWR0114
+U 1 1 5D9630AB
+P 7600 3300
+F 0 "#PWR0114" H 7600 3050 50  0001 C CNN
+F 1 "GND" H 7605 3127 50  0000 C CNN
+F 2 "" H 7600 3300 50  0001 C CNN
+F 3 "" H 7600 3300 50  0001 C CNN
+	1    7600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3300 7600 3300
+Text GLabel 6400 2200 1    50   Input ~ 0
+VCC
+Text GLabel 6300 2200 1    50   Input ~ 0
+SWCLK
+Text GLabel 5200 3600 0    50   Input ~ 0
+VCCA
+$Comp
+L Device:R R1
+U 1 1 5D878BE7
+P 2700 2500
+F 0 "R1" H 2770 2546 50  0000 L CNN
+F 1 "1k" H 2770 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2630 2500 50  0001 C CNN
+F 3 "~" H 2700 2500 50  0001 C CNN
+	1    2700 2500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7000 2900 2    50   Input ~ 0
+USER
+Text GLabel 7000 3700 2    50   Output ~ 0
+WIFI_STATE
+Text GLabel 6500 2200 1    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	9850 3150 10300 3150
+Connection ~ 10300 3150
+Wire Wire Line
+	10300 3150 10850 3150
+Connection ~ 9850 3150
+$Comp
+L Connector:Conn_01x05_Male U2
+U 1 1 5D9C26DD
+P 5900 600
+F 0 "U2" V 5950 900 50  0000 L CNN
+F 1 "JTagPogoPin" V 5850 900 50  0000 L CNN
+F 2 "JTag:JtagPogoPin" H 5900 600 50  0001 C CNN
+F 3 "" H 5900 600 50  0001 C CNN
+	1    5900 600 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5D9C31DD
+P 5700 1150
+F 0 "#PWR0115" H 5700 900 50  0001 C CNN
+F 1 "GND" H 5705 977 50  0000 C CNN
+F 2 "" H 5700 1150 50  0001 C CNN
+F 3 "" H 5700 1150 50  0001 C CNN
+	1    5700 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 800  3    50   Input ~ 0
+NRST
+Text GLabel 6100 800  3    50   Input ~ 0
+SWDIO
+$Comp
+L Device:Crystal Y2
+U 1 1 5DE13879
+P 2000 4800
+F 0 "Y2" H 2000 5025 50  0000 C CNN
+F 1 "32.768KHz" H 2000 4934 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm" H 2000 4800 50  0001 C CNN
+F 3 "~" H 2000 4800 50  0001 C CNN
+	1    2000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5DE17C02
+P 1600 5050
+F 0 "C3" H 1715 5096 50  0000 L CNN
+F 1 "10p" H 1715 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1638 4900 50  0001 C CNN
+F 3 "~" H 1600 5050 50  0001 C CNN
+	1    1600 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5DE18577
+P 2400 5050
+F 0 "C4" H 2515 5096 50  0000 L CNN
+F 1 "10p" H 2515 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2438 4900 50  0001 C CNN
+F 3 "~" H 2400 5050 50  0001 C CNN
+	1    2400 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5DE18F3A
+P 2400 5200
+F 0 "#PWR0116" H 2400 4950 50  0001 C CNN
+F 1 "GND" H 2405 5027 50  0000 C CNN
+F 2 "" H 2400 5200 50  0001 C CNN
+F 3 "" H 2400 5200 50  0001 C CNN
+	1    2400 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5DE19787
+P 1600 5200
+F 0 "#PWR0117" H 1600 4950 50  0001 C CNN
+F 1 "GND" H 1605 5027 50  0000 C CNN
+F 2 "" H 1600 5200 50  0001 C CNN
+F 3 "" H 1600 5200 50  0001 C CNN
+	1    1600 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 4600 1    50   Input ~ 0
+OSC32K_IN
+Text GLabel 2400 4600 1    50   Output ~ 0
+OSC32K_OUT
+Text GLabel 5200 3100 0    50   Input ~ 0
+OSC32K_OUT
+Text GLabel 5200 3000 0    50   Output ~ 0
+OSC32K_IN
+Text GLabel 2700 1250 3    50   UnSpc ~ 0
+BOOT0
+Wire Wire Line
+	2600 1000 2350 1000
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5DE3EFC2
+P 2700 800
+AR Path="/5D793FC5/5DE3EFC2" Ref="J?"  Part="1" 
+AR Path="/5D78A3F3/5DE3EFC2" Ref="J3"  Part="1" 
+AR Path="/5E00024D/5DE3EFC2" Ref="J2"  Part="1" 
+F 0 "J2" V 2700 400 50  0000 C CNN
+F 1 "Conn_01x03_Male" V 2600 800 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Horizontal" H 2700 800 50  0001 C CNN
+F 3 "~" H 2700 800 50  0001 C CNN
+	1    2700 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE3EFC8
+P 3200 1000
+AR Path="/5D793FC5/5DE3EFC8" Ref="#PWR?"  Part="1" 
+AR Path="/5D78A3F3/5DE3EFC8" Ref="#PWR0106"  Part="1" 
+AR Path="/5E00024D/5DE3EFC8" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 3200 750 50  0001 C CNN
+F 1 "GND" V 3205 872 50  0000 R CNN
+F 2 "" H 3200 1000 50  0001 C CNN
+F 3 "" H 3200 1000 50  0001 C CNN
+	1    3200 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2800 1000 2850 1000
+Wire Wire Line
+	2700 1250 2700 1000
+Text GLabel 7000 3600 2    50   Output ~ 0
+PROGRAM_STATE
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5E02AC38
+P 1200 650
+F 0 "J1" V 1262 694 50  0000 L CNN
+F 1 "Conn_01x02_Male" V 1353 694 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 1200 650 50  0001 C CNN
+F 3 "~" H 1200 650 50  0001 C CNN
+	1    1200 650 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J4
+U 1 1 5E055FCF
+P 4500 650
+F 0 "J4" V 4464 262 50  0000 R CNN
+F 1 "Conn_01x06" V 4373 262 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 4500 650 50  0001 C CNN
+F 3 "~" H 4500 650 50  0001 C CNN
+	1    4500 650 
+	0    1    1    0   
+$EndComp
+Text GLabel 5500 4900 3    50   Output ~ 0
+NSS
+Text GLabel 5600 4900 3    50   Output ~ 0
+SCK
+Text GLabel 5700 4900 3    50   Output ~ 0
+MISO
+Text GLabel 5800 4900 3    50   Output ~ 0
+MOSI
+Text GLabel 4300 850  3    50   UnSpc ~ 0
+NSS
+Text GLabel 4400 850  3    50   UnSpc ~ 0
+SCK
+Text GLabel 4500 850  3    50   UnSpc ~ 0
+MISO
+Text GLabel 4600 850  3    50   UnSpc ~ 0
+MOSI
+$Comp
+L power:GND #PWR0119
+U 1 1 5E06AB10
+P 4700 900
+F 0 "#PWR0119" H 4700 650 50  0001 C CNN
+F 1 "GND" H 4705 727 50  0000 C CNN
+F 2 "" H 4700 900 50  0001 C CNN
+F 3 "" H 4700 900 50  0001 C CNN
+	1    4700 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 850  4700 900 
+NoConn ~ 5200 3300
+NoConn ~ 5200 3400
+NoConn ~ 5200 3700
+NoConn ~ 5200 3800
+NoConn ~ 5900 4800
+NoConn ~ 6100 4800
+NoConn ~ 7000 3900
+NoConn ~ 7000 3800
+NoConn ~ 6200 2200
+NoConn ~ 6100 2200
+NoConn ~ 6000 2200
+NoConn ~ 5800 2200
+NoConn ~ 5700 2200
+NoConn ~ 6600 2200
+NoConn ~ 6700 2200
+NoConn ~ 5500 2200
+NoConn ~ 7000 3500
+Connection ~ 8050 2450
+Wire Wire Line
+	8050 2400 8050 2450
+$Comp
+L Device:L L3
+U 1 1 5D85E523
+P 8050 2250
+F 0 "L3" H 8103 2296 50  0000 L CNN
+F 1 "10nH" H 8103 2205 50  0000 L CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 8050 2250 50  0001 C CNN
+F 3 "~" H 8050 2250 50  0001 C CNN
+	1    8050 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1000 8800 1000
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5E0B7D5E
+P 3750 2100
+F 0 "J3" V 3650 2100 50  0000 C CNN
+F 1 "Conn_01x03_Male" V 3550 2050 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3750 2100 50  0001 C CNN
+F 3 "~" H 3750 2100 50  0001 C CNN
+	1    3750 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 5200 2900 0    50   Input ~ 0
+VBat
+Text GLabel 4100 2100 2    50   Output ~ 0
+VBat
+Text GLabel 4100 2200 2    50   Input ~ 0
+VBatPlug
+$Comp
+L Device:L L2
+U 1 1 5E0C2695
+P 3600 6650
+F 0 "L2" V 3400 6550 50  0000 C CNN
+F 1 "LQG15HS3N6S02B" V 3500 6650 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 4250 6700 50  0001 L CNN
+F 3 "https://psearch.en.murata.com/inductor/product/LQG15HS3N6S02%23.html" H 4250 6600 50  0001 L CNN
+F 4 "LQG15HS_02 Series Inductor 3.6nH +/-0.3nH 0402 (1005)" H 4250 6500 50  0001 L CNN "Description"
+F 5 "0.55" H 4250 6400 50  0001 L CNN "Height"
+F 6 "N/A" H 4250 6300 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=N%2FA" H 4250 6200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 4250 6100 50  0001 L CNN "Manufacturer_Name"
+F 9 "LQG15HS3N6S02B" H 4250 6000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3600 6650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5E0CBD65
+P 2800 6650
+F 0 "C5" V 3004 6778 50  0000 L CNN
+F 1 "10nF" V 3095 6778 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3150 6700 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/C0805X104K4RACAUTO.pdf" H 3150 6600 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 0.1uF X7R 0805 10% AEC-Q200" H 3150 6500 50  0001 L CNN "Description"
+F 5 "0.98" H 3150 6400 50  0001 L CNN "Height"
+F 6 "80-C0805X104K4RAUTO" H 3150 6300 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805X104K4RAUTO" H 3150 6200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 3150 6100 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805X104K4RACAUTO" H 3150 6000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2800 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5E0CFFC6
+P 3200 6800
+F 0 "C6" H 3300 6800 50  0000 L CNN
+F 1 "ND" H 3300 6700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3550 6850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/C0805X104K4RACAUTO.pdf" H 3550 6750 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 0.1uF X7R 0805 10% AEC-Q200" H 3550 6650 50  0001 L CNN "Description"
+F 5 "0.98" H 3550 6550 50  0001 L CNN "Height"
+F 6 "80-C0805X104K4RAUTO" H 3550 6450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805X104K4RAUTO" H 3550 6350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 3550 6250 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805X104K4RACAUTO" H 3550 6150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3200 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5E0D0BE6
+P 4000 6800
+F 0 "C7" H 4100 6800 50  0000 L CNN
+F 1 "1.2pF" H 4100 6700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4350 6850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/C0805X104K4RACAUTO.pdf" H 4350 6750 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 0.1uF X7R 0805 10% AEC-Q200" H 4350 6650 50  0001 L CNN "Description"
+F 5 "0.98" H 4350 6550 50  0001 L CNN "Height"
+F 6 "80-C0805X104K4RAUTO" H 4350 6450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805X104K4RAUTO" H 4350 6350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 4350 6250 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805X104K4RACAUTO" H 4350 6150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4000 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5E0D18AE
+P 3600 7250
+F 0 "#PWR0120" H 3600 7000 50  0001 C CNN
+F 1 "GND" H 3605 7077 50  0000 C CNN
+F 2 "" H 3600 7250 50  0001 C CNN
+F 3 "" H 3600 7250 50  0001 C CNN
+	1    3600 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 7150 3600 7150
+Connection ~ 3600 7150
+Wire Wire Line
+	3600 7150 4000 7150
+$Comp
+L power:GND #PWR0121
+U 1 1 5DFD1F89
+P 10400 2650
+F 0 "#PWR0121" H 10400 2400 50  0001 C CNN
+F 1 "GND" H 10405 2477 50  0000 C CNN
+F 2 "" H 10400 2650 50  0001 C CNN
+F 3 "" H 10400 2650 50  0001 C CNN
+	1    10400 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 5DFD1F7F
+P 10400 2400
+F 0 "C18" V 10350 2200 50  0000 L CNN
+F 1 "1uF" V 10250 2300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10750 2450 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/C0805X104K4RACAUTO.pdf" H 10750 2350 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 0.1uF X7R 0805 10% AEC-Q200" H 10750 2250 50  0001 L CNN "Description"
+F 5 "0.98" H 10750 2150 50  0001 L CNN "Height"
+F 6 "80-C0805X104K4RAUTO" H 10750 2050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805X104K4RAUTO" H 10750 1950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 10750 1850 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805X104K4RACAUTO" H 10750 1750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10400 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8050 2450 8750 2450
+$Comp
+L Device:C C17
+U 1 1 5D78CB09
+P 10400 1250
+F 0 "C17" V 10350 1300 50  0000 L CNN
+F 1 "4.7uF" V 10250 1200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10750 1300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/C0805X104K4RACAUTO.pdf" H 10750 1200 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 0.1uF X7R 0805 10% AEC-Q200" H 10750 1100 50  0001 L CNN "Description"
+F 5 "0.98" H 10750 1000 50  0001 L CNN "Height"
+F 6 "80-C0805X104K4RAUTO" H 10750 900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805X104K4RAUTO" H 10750 800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 10750 700 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805X104K4RACAUTO" H 10750 600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10400 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10400 1100 10400 1000
+Wire Wire Line
+	10400 1400 10400 1500
+Wire Wire Line
+	9500 1000 9500 1100
+Wire Wire Line
+	9500 1500 9800 1500
+Wire Wire Line
+	9500 1000 9800 1000
+Wire Wire Line
+	9800 1000 9800 1100
+Connection ~ 9800 1000
+Wire Wire Line
+	9800 1000 10100 1000
+Wire Wire Line
+	10100 1000 10100 1100
+Connection ~ 10100 1000
+Wire Wire Line
+	10100 1000 10400 1000
+Wire Wire Line
+	9800 1500 9800 1400
+Connection ~ 9800 1500
+Wire Wire Line
+	9500 1500 9500 1400
+Connection ~ 9500 1500
+$Comp
+L Device:C C14
+U 1 1 5D89620A
+P 10000 2400
+F 0 "C14" V 10050 2450 50  0000 L CNN
+F 1 "10nF" V 10150 2350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10350 2450 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/C0805X104K4RACAUTO.pdf" H 10350 2350 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 0.1uF X7R 0805 10% AEC-Q200" H 10350 2250 50  0001 L CNN "Description"
+F 5 "0.98" H 10350 2150 50  0001 L CNN "Height"
+F 6 "80-C0805X104K4RAUTO" H 10350 2050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805X104K4RAUTO" H 10350 1950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 10350 1850 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805X104K4RACAUTO" H 10350 1750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 2150 10000 2150
+Wire Wire Line
+	8050 2450 8050 2700
+Wire Wire Line
+	8050 3000 8050 3100
+Wire Wire Line
+	9850 3700 9850 3800
+Wire Wire Line
+	10300 3700 10300 3800
+Wire Wire Line
+	10300 3150 10300 3400
+Wire Wire Line
+	9850 3150 9850 3400
+Wire Wire Line
+	10000 2150 10000 2250
+Connection ~ 10000 2150
+Wire Wire Line
+	10000 2150 10400 2150
+Wire Wire Line
+	10400 2250 10400 2150
+Connection ~ 10400 2150
+Wire Wire Line
+	10400 2150 10500 2150
+Wire Wire Line
+	10000 2650 10000 2550
+Wire Wire Line
+	10400 2650 10400 2550
+Wire Wire Line
+	8050 1000 8050 1100
+Connection ~ 8050 1000
+Wire Wire Line
+	8050 1400 8050 1500
+Wire Wire Line
+	2400 4600 2400 4800
+Wire Wire Line
+	2150 4800 2400 4800
+Wire Wire Line
+	1600 4600 1600 4800
+Wire Wire Line
+	1850 4800 1600 4800
+Wire Wire Line
+	2400 4900 2400 4800
+Connection ~ 2400 4800
+Wire Wire Line
+	1200 850  1200 1100
+Wire Wire Line
+	1100 850  1100 1100
+Wire Wire Line
+	1600 4900 1600 4800
+Connection ~ 1600 4800
+Wire Wire Line
+	9800 1500 10100 1500
+Wire Wire Line
+	10100 1400 10100 1500
+Connection ~ 10100 1500
+Wire Wire Line
+	10100 1500 10400 1500
+Wire Wire Line
+	5600 2200 5600 2050
+Wire Wire Line
+	8050 2000 8050 2100
+Connection ~ 8050 2100
+Wire Wire Line
+	5500 4900 5500 4800
+Wire Wire Line
+	5600 4900 5600 4800
+Wire Wire Line
+	5700 4900 5700 4800
+Wire Wire Line
+	5800 4900 5800 4800
+Wire Wire Line
+	6200 4900 6200 4800
+Wire Wire Line
+	6300 4900 6300 4800
+Wire Wire Line
+	6400 4800 6400 5250
+Wire Wire Line
+	6500 4900 6500 4800
+Wire Wire Line
+	6600 4900 6600 4800
+Wire Wire Line
+	8050 2100 8350 2100
+Wire Wire Line
+	8650 2100 8900 2100
+Text GLabel 8900 2100 2    50   Output ~ 0
+VLXSMPS
+$Comp
+L Device:C C10
+U 1 1 5D8636EF
+P 8050 2850
+F 0 "C10" V 8000 2900 50  0000 L CNN
+F 1 "4.7uF" V 7900 2850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8400 2900 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/C0805X104K4RACAUTO.pdf" H 8400 2800 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 0.1uF X7R 0805 10% AEC-Q200" H 8400 2700 50  0001 L CNN "Description"
+F 5 "0.98" H 8400 2600 50  0001 L CNN "Height"
+F 6 "80-C0805X104K4RAUTO" H 8400 2500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805X104K4RAUTO" H 8400 2400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 8400 2300 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805X104K4RACAUTO" H 8400 2200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8050 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L L4
+U 1 1 5D862BCF
+P 8500 2100
+F 0 "L4" V 8319 2100 50  0000 C CNN
+F 1 "10nH" V 8410 2100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 8500 2100 50  0001 C CNN
+F 3 "~" H 8500 2100 50  0001 C CNN
+	1    8500 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 6650 4500 6650
+$Comp
+L power:GND #PWR0129
+U 1 1 5E10E086
+P 5450 6550
+F 0 "#PWR0129" H 5450 6300 50  0001 C CNN
+F 1 "GND" H 5455 6377 50  0000 C CNN
+F 2 "" H 5450 6550 50  0001 C CNN
+F 3 "" H 5450 6550 50  0001 C CNN
+	1    5450 6550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5900 2200
+Text GLabel 7000 3400 2    50   Input ~ 0
+VFBSOUT
+Text GLabel 8750 2450 2    50   Output ~ 0
+VFBSOUT
+Wire Wire Line
+	3950 2100 4100 2100
+Wire Wire Line
+	4100 2200 3950 2200
+$Comp
+L Device:Battery BT1
+U 1 1 5E178167
+P 3900 2900
+F 0 "BT1" H 4008 2946 50  0000 L CNN
+F 1 "Battery" H 4008 2855 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" V 3900 2960 50  0001 C CNN
+F 3 "~" V 3900 2960 50  0001 C CNN
+	1    3900 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0131
+U 1 1 5E1787FD
+P 3900 3100
+F 0 "#PWR0131" H 3900 2850 50  0001 C CNN
+F 1 "GND" H 3905 2927 50  0000 C CNN
+F 2 "" H 3900 3100 50  0001 C CNN
+F 3 "" H 3900 3100 50  0001 C CNN
+	1    3900 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 2700 2    50   Output ~ 0
+VBatPlug
+Wire Wire Line
+	10400 1000 10950 1000
+Text GLabel 5900 800  3    50   Input ~ 0
+SWCLK
+Wire Wire Line
+	3150 1000 3200 1000
+$Comp
+L Device:R R2
+U 1 1 5E24A29C
+P 3000 1000
+F 0 "R2" V 3000 1000 50  0000 C CNN
+F 1 "10k" V 2884 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2930 1000 50  0001 C CNN
+F 3 "~" H 3000 1000 50  0001 C CNN
+	1    3000 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5E2941FA
+P 4250 1900
+F 0 "C8" V 3998 1900 50  0000 C CNN
+F 1 "100nF" V 4089 1900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4288 1750 50  0001 C CNN
+F 3 "~" H 4250 1900 50  0001 C CNN
+	1    4250 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0133
+U 1 1 5E294B97
+P 4500 1900
+F 0 "#PWR0133" H 4500 1650 50  0001 C CNN
+F 1 "GND" H 4505 1727 50  0000 C CNN
+F 2 "" H 4500 1900 50  0001 C CNN
+F 3 "" H 4500 1900 50  0001 C CNN
+	1    4500 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1900 3950 1900
+Wire Wire Line
+	3950 1900 3950 2000
+Wire Wire Line
+	4050 1800 4050 1900
+Wire Wire Line
+	4400 1900 4350 1900
+Wire Wire Line
+	4500 1900 4400 1900
+Connection ~ 4400 1900
+Wire Wire Line
+	4100 1900 4050 1900
+Connection ~ 4050 1900
+Wire Wire Line
+	2400 2500 2550 2500
+Wire Wire Line
+	1400 6650 1450 6650
+Wire Wire Line
+	750  6650 1050 6650
+Wire Wire Line
+	5700 1150 5700 800 
+$Comp
+L Antenna:AN91445 U1
+U 1 1 5D684390
+P 4750 6650
+F 0 "U1" H 4850 6550 60  0000 L CNN
+F 1 "AN91445" H 4850 6450 60  0000 L CNN
+F 2 "MyPinout:AN91445" H 4750 6650 60  0001 C CNN
+F 3 "" H 4750 6650 60  0001 C CNN
+	1    4750 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 6650 4000 6650
+Connection ~ 4000 6650
+Wire Wire Line
+	3450 6650 3200 6650
+Connection ~ 3200 6650
+Wire Wire Line
+	3200 6950 3200 7150
+Wire Wire Line
+	4000 6950 4000 7150
+Wire Wire Line
+	3600 7150 3600 7250
+Wire Wire Line
+	2950 6650 3200 6650
+Wire Wire Line
+	2650 6650 2500 6650
+NoConn ~ 6000 4800
+Text GLabel 9150 5050 0    50   Input ~ 0
+WIFI_STATE
+Text GLabel 9150 5550 0    50   Input ~ 0
+PROGRAM_STATE
+$Comp
+L Device:R R16
+U 1 1 5E02EC2E
+P 9400 5050
+F 0 "R16" V 9193 5050 50  0000 C CNN
+F 1 "R" V 9284 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9330 5050 50  0001 C CNN
+F 3 "~" H 9400 5050 50  0001 C CNN
+	1    9400 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5E02EFA6
+P 9400 5550
+F 0 "R17" V 9193 5550 50  0000 C CNN
+F 1 "R" V 9284 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9330 5550 50  0001 C CNN
+F 3 "~" H 9400 5550 50  0001 C CNN
+	1    9400 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D13
+U 1 1 5E02F36D
+P 9850 5050
+F 0 "D13" H 9843 4795 50  0000 C CNN
+F 1 "LED" H 9843 4886 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9850 5050 50  0001 C CNN
+F 3 "~" H 9850 5050 50  0001 C CNN
+	1    9850 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0143
+U 1 1 5E02FACA
+P 10150 5600
+F 0 "#PWR0143" H 10150 5350 50  0001 C CNN
+F 1 "GND" H 10155 5427 50  0000 C CNN
+F 2 "" H 10150 5600 50  0001 C CNN
+F 3 "" H 10150 5600 50  0001 C CNN
+	1    10150 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D14
+U 1 1 5E030392
+P 9850 5550
+F 0 "D14" H 9843 5295 50  0000 C CNN
+F 1 "LED" H 9843 5386 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9850 5550 50  0001 C CNN
+F 3 "~" H 9850 5550 50  0001 C CNN
+	1    9850 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9550 5050 9700 5050
+Wire Wire Line
+	9150 5050 9250 5050
+Wire Wire Line
+	9150 5550 9250 5550
+Wire Wire Line
+	9550 5550 9700 5550
+Wire Wire Line
+	10000 5050 10150 5050
+Wire Wire Line
+	10000 5550 10150 5550
+Connection ~ 10150 5550
+Wire Wire Line
+	10150 5550 10150 5600
+Wire Wire Line
+	10150 5050 10150 5550
+Wire Wire Line
+	1450 6700 1450 6650
+Connection ~ 1450 6650
+Wire Wire Line
+	1450 6650 1800 6650
+Wire Wire Line
+	1050 6700 1050 6650
+Connection ~ 1050 6650
+Wire Wire Line
+	1050 6650 1100 6650
+Wire Wire Line
+	4500 6550 4500 6350
+Wire Wire Line
+	4500 6350 5450 6350
+Wire Wire Line
+	5450 6350 5450 6550
+$Comp
+L power:GND #PWR0102
+U 1 1 5E08CA8D
+P 2150 7100
+F 0 "#PWR0102" H 2150 6850 50  0001 C CNN
+F 1 "GND" H 2155 6927 50  0000 C CNN
+F 2 "" H 2150 7100 50  0001 C CNN
+F 3 "" H 2150 7100 50  0001 C CNN
+	1    2150 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 7100 2150 7000
+$Comp
+L STM32WBCEU6:STM32WB55CEU6 IC1
+U 1 1 5E005047
+P 5200 2900
+F 0 "IC1" H 6850 1200 50  0000 L CNN
+F 1 "STM32WB55CEU6" H 6850 1100 50  0000 L CNN
+F 2 "STM32:QFN50P700X700X65-49N-D" H 6850 3400 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/STM32WB55CEU6.pdf" H 6850 3300 50  0001 L CNN
+F 4 "STMICROELECTRONICS - STM32WB55CEU6 - MCU, 32BIT, 64MHZ" H 6850 3200 50  0001 L CNN "Description"
+F 5 "0.65" H 6850 3100 50  0001 L CNN "Height"
+F 6 "511-STM32WB55CEU6" H 6850 3000 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=511-STM32WB55CEU6" H 6850 2900 50  0001 L CNN "Mouser Price/Stock"
+F 8 "STMicroelectronics" H 6850 2800 50  0001 L CNN "Manufacturer_Name"
+F 9 "STM32WB55CEU6" H 6850 2700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5200 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 7000 3000 2    50   Input ~ 0
+VCC
+Text GLabel 4200 850  3    50   UnSpc ~ 0
+3.3V
+Text GLabel 8050 800  1    50   Input ~ 0
+3.3V
+Text GLabel 9500 750  1    50   Input ~ 0
+3.3V
+Text GLabel 8050 2000 1    50   Input ~ 0
+3.3V
+Text GLabel 9500 2050 1    50   Input ~ 0
+3.3V
+Text GLabel 9850 3100 1    50   Input ~ 0
+3.3V
+Text GLabel 6000 800  3    50   UnSpc ~ 0
+3.3V
+Text GLabel 2350 1000 3    50   UnSpc ~ 0
+3.3V
+Text GLabel 4050 1800 1    50   UnSpc ~ 0
+3.3V
+$EndSCHEMATC

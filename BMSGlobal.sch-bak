@@ -1,0 +1,434 @@
+EESchema Schematic File Version 4
+LIBS:BattFred-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GPIO:MAX7301AAI+ IC?
+U 1 1 5E09B089
+P 3650 2600
+AR Path="/5E00D4EB/5E09B089" Ref="IC?"  Part="1" 
+AR Path="/5E096568/5E096642/5E09B089" Ref="IC?"  Part="1" 
+AR Path="/5E096568/5E09B089" Ref="IC2"  Part="1" 
+F 0 "IC2" H 4250 1035 50  0000 C CNN
+F 1 "MAX7301AAI+" H 4250 1126 50  0000 C CNN
+F 2 "MyPinout:SOP65P778X199-28N" H 4700 2700 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7301.pdf" H 4700 2600 50  0001 L CNN
+F 4 "Maxim MAX7301AAI+, Input Output Controller 20-USB, 28-Pin SSOP" H 4700 2500 50  0001 L CNN "Description"
+F 5 "1.99" H 4700 2400 50  0001 L CNN "Height"
+F 6 "" H 4700 2300 50  0001 L CNN "Mouser2 Part Number"
+F 7 "" H 4700 2200 50  0001 L CNN "Mouser2 Price/Stock"
+F 8 "Maxim Integrated" H 4700 2100 50  0001 L CNN "Manufacturer_Name"
+F 9 "MAX7301AAI+" H 4700 2000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3650 2600
+	-1   0    0    1   
+$EndComp
+Text GLabel 10900 700  2    50   Input Italic 10
+VCC
+$Comp
+L power:GND #PWR0134
+U 1 1 5E155022
+P 11150 850
+F 0 "#PWR0134" H 11150 600 50  0001 C CNN
+F 1 "GND" H 11155 677 50  0000 C CNN
+F 2 "" H 11150 850 50  0001 C CNN
+F 3 "" H 11150 850 50  0001 C CNN
+	1    11150 850 
+	1    0    0    -1  
+$EndComp
+Text GLabel 10700 900  2    50   Input Italic 10
+VCharge
+Wire Wire Line
+	10700 700  10900 700 
+Text GLabel 9300 900  0    50   Input Italic 10
+CtrlCharge1
+Text GLabel 9300 1000 0    50   Input Italic 10
+CtrlDischarge1
+Text GLabel 9300 1100 0    50   Input Italic 10
+INChargeOK1
+Wire Wire Line
+	9300 700  9450 700 
+Wire Wire Line
+	9450 800  9300 800 
+Wire Wire Line
+	9300 900  9450 900 
+Wire Wire Line
+	9450 1000 9300 1000
+Wire Wire Line
+	9300 1100 9450 1100
+Text GLabel 4050 1300 2    50   BiDi Italic 10
+OUTCharge1
+Text GLabel 4050 1400 2    50   BiDi Italic 10
+OUTDischarge1
+Text GLabel 4050 1500 2    50   BiDi Italic 10
+CtrlCharge1
+Text GLabel 4050 1600 2    50   BiDi Italic 10
+CtrlDischarge1
+Text GLabel 4050 1700 2    50   BiDi Italic 10
+INChargeOK1
+Text GLabel 4050 1800 2    50   BiDi Italic 10
+OUTCharge2
+Text GLabel 4050 1900 2    50   BiDi Italic 10
+OUTDischarge2
+Text GLabel 4050 2000 2    50   BiDi Italic 10
+CtrlCharge2
+Text GLabel 4050 2100 2    50   BiDi Italic 10
+CtrlDischarge2
+Text GLabel 4050 2200 2    50   BiDi Italic 10
+INChargeOK2
+Text GLabel 2150 1300 0    50   BiDi Italic 10
+OUTCharge3
+Text GLabel 2150 1400 0    50   BiDi Italic 10
+OUTDischarge3
+Text GLabel 2150 1500 0    50   BiDi Italic 10
+CtrlCharge3
+Text GLabel 2150 1600 0    50   BiDi Italic 10
+CtrlDischarge3
+Text GLabel 2150 1700 0    50   BiDi Italic 10
+INChargeOK3
+Text GLabel 2150 1800 0    50   BiDi Italic 10
+OUTCharge4
+Text GLabel 2150 1900 0    50   BiDi Italic 10
+OUTDischarge4
+Text GLabel 2150 2000 0    50   BiDi Italic 10
+CtrlCharge4
+Text GLabel 2150 2100 0    50   BiDi Italic 10
+CtrlDischarge4
+Text GLabel 2150 2200 0    50   BiDi Italic 10
+INChargeOK4
+Text GLabel 10900 1850 2    50   Input Italic 10
+VCC
+$Comp
+L power:GND #PWR0136
+U 1 1 5E167B02
+P 11150 2000
+F 0 "#PWR0136" H 11150 1750 50  0001 C CNN
+F 1 "GND" H 11155 1827 50  0000 C CNN
+F 2 "" H 11150 2000 50  0001 C CNN
+F 3 "" H 11150 2000 50  0001 C CNN
+	1    11150 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 10700 2050 2    50   Input Italic 10
+VCharge
+Wire Wire Line
+	10700 1850 10900 1850
+Text GLabel 9300 1850 0    50   Output Italic 10
+OUTCharge2
+Text GLabel 9300 1950 0    50   Output Italic 10
+OUTDischarge2
+Text GLabel 9300 2050 0    50   Input Italic 10
+CtrlCharge2
+Text GLabel 9300 2150 0    50   Input Italic 10
+CtrlDischarge2
+Text GLabel 9300 2250 0    50   Input Italic 10
+INChargeOK2
+Wire Wire Line
+	9300 1850 9450 1850
+Wire Wire Line
+	9450 1950 9300 1950
+Wire Wire Line
+	9300 2050 9450 2050
+Wire Wire Line
+	9450 2150 9300 2150
+Wire Wire Line
+	9300 2250 9450 2250
+Text GLabel 10900 2950 2    50   Input Italic 10
+VCC
+$Comp
+L power:GND #PWR0138
+U 1 1 5E16933B
+P 11050 3100
+F 0 "#PWR0138" H 11050 2850 50  0001 C CNN
+F 1 "GND" H 11055 2927 50  0000 C CNN
+F 2 "" H 11050 3100 50  0001 C CNN
+F 3 "" H 11050 3100 50  0001 C CNN
+	1    11050 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 3050 11050 3050
+Wire Wire Line
+	11050 3050 11050 3100
+Text GLabel 10750 3150 2    50   Input Italic 10
+VCharge
+Wire Wire Line
+	10700 3150 10750 3150
+Wire Wire Line
+	10700 2950 10900 2950
+Text GLabel 9300 2950 0    50   Output Italic 10
+OUTCharge3
+Text GLabel 9300 3050 0    50   Output Italic 10
+OUTDischarge3
+Text GLabel 9300 3150 0    50   Input Italic 10
+CtrlCharge3
+Text GLabel 9300 3250 0    50   Input Italic 10
+CtrlDischarge3
+Text GLabel 9300 3350 0    50   Input Italic 10
+INChargeOK3
+Wire Wire Line
+	9300 2950 9450 2950
+Wire Wire Line
+	9450 3050 9300 3050
+Wire Wire Line
+	9300 3150 9450 3150
+Wire Wire Line
+	9450 3250 9300 3250
+Wire Wire Line
+	9300 3350 9450 3350
+Text GLabel 10900 4100 2    50   Input Italic 10
+VCC
+$Comp
+L power:GND #PWR0140
+U 1 1 5E16A9DA
+P 11050 4250
+F 0 "#PWR0140" H 11050 4000 50  0001 C CNN
+F 1 "GND" H 11055 4077 50  0000 C CNN
+F 2 "" H 11050 4250 50  0001 C CNN
+F 3 "" H 11050 4250 50  0001 C CNN
+	1    11050 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 4200 11050 4200
+Wire Wire Line
+	11050 4200 11050 4250
+Text GLabel 10750 4300 2    50   Input Italic 10
+VCC
+Wire Wire Line
+	10700 4300 10750 4300
+Wire Wire Line
+	10700 4100 10900 4100
+Text GLabel 9300 4100 0    50   Output Italic 10
+OUTCharge4
+Text GLabel 9300 4200 0    50   Output Italic 10
+OUTDischarge4
+Text GLabel 9300 4300 0    50   Input Italic 10
+CtrlCharge4
+Text GLabel 9300 4400 0    50   Input Italic 10
+CtrlDischarge4
+Text GLabel 9300 4500 0    50   Input Italic 10
+INChargeOK4
+Wire Wire Line
+	9300 4100 9450 4100
+Wire Wire Line
+	9450 4200 9300 4200
+Wire Wire Line
+	9300 4300 9450 4300
+Wire Wire Line
+	9450 4400 9300 4400
+Wire Wire Line
+	9300 4500 9450 4500
+Wire Wire Line
+	2150 1300 2450 1300
+Wire Wire Line
+	2450 1400 2150 1400
+Wire Wire Line
+	2150 1500 2450 1500
+Wire Wire Line
+	2150 1600 2450 1600
+Wire Wire Line
+	2450 1700 2150 1700
+Wire Wire Line
+	2150 1800 2450 1800
+Wire Wire Line
+	2450 1900 2150 1900
+Wire Wire Line
+	2150 2000 2450 2000
+Wire Wire Line
+	2450 2100 2150 2100
+Wire Wire Line
+	2150 2200 2450 2200
+Wire Wire Line
+	3650 1300 4050 1300
+Wire Wire Line
+	4050 1400 3650 1400
+Wire Wire Line
+	3650 1500 4050 1500
+Wire Wire Line
+	4050 1600 3650 1600
+Wire Wire Line
+	3650 1700 4050 1700
+Wire Wire Line
+	4050 1800 3650 1800
+Wire Wire Line
+	3650 1900 4050 1900
+Wire Wire Line
+	4050 2000 3650 2000
+Wire Wire Line
+	3650 2100 4050 2100
+Wire Wire Line
+	4050 2200 3650 2200
+Text GLabel 2450 2300 0    50   Input Italic 10
+SCK
+Text GLabel 2450 2400 0    50   Input Italic 10
+MOSI
+Text GLabel 3650 2300 2    50   Output Italic 10
+MISO
+Text GLabel 2450 2500 0    50   Input Italic 10
+NSS
+Wire Wire Line
+	11150 800  11150 850 
+Wire Wire Line
+	10700 800  11150 800 
+Wire Wire Line
+	11150 1950 11150 2000
+Wire Wire Line
+	10700 1950 11150 1950
+$Comp
+L power:GND #PWR0142
+U 1 1 5E1AA942
+P 4050 2450
+F 0 "#PWR0142" H 4050 2200 50  0001 C CNN
+F 1 "GND" H 4055 2277 50  0000 C CNN
+F 2 "" H 4050 2450 50  0001 C CNN
+F 3 "" H 4050 2450 50  0001 C CNN
+	1    4050 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2400 3650 2450
+Wire Wire Line
+	3650 2450 3900 2450
+Connection ~ 3650 2450
+Wire Wire Line
+	3650 2450 3650 2500
+Text GLabel 1950 2600 0    50   Input Italic 10
+VCC
+Wire Wire Line
+	2450 2600 2250 2600
+$Comp
+L Device:C C19
+U 1 1 5E1B18DD
+P 2250 2750
+F 0 "C19" H 2365 2796 50  0000 L CNN
+F 1 "47nF" H 2365 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2288 2600 50  0001 C CNN
+F 3 "~" H 2250 2750 50  0001 C CNN
+	1    2250 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 2250 2600
+Wire Wire Line
+	2250 2600 1950 2600
+Wire Wire Line
+	2250 2900 3650 2900
+Wire Wire Line
+	3900 2900 3900 2450
+Connection ~ 3900 2450
+Wire Wire Line
+	3900 2450 4050 2450
+$Comp
+L Device:R R3
+U 1 1 5E1B3F5A
+P 3650 2750
+F 0 "R3" H 3720 2796 50  0000 L CNN
+F 1 "39k" H 3720 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3580 2750 50  0001 C CNN
+F 3 "~" H 3650 2750 50  0001 C CNN
+	1    3650 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 2900
+Wire Wire Line
+	3650 2900 3900 2900
+Text GLabel 9300 700  0    50   Output Italic 10
+OUTCharge1
+Text GLabel 9300 800  0    50   Output Italic 10
+OUTDischarge1
+Wire Wire Line
+	10900 4400 10900 4450
+Wire Wire Line
+	10700 4400 10900 4400
+$Sheet
+S 9450 4000 1250 800 
+U 5E16A9D3
+F0 "sheet5E16A9C8" 50
+F1 "BMS.sch" 50
+F2 "OUTCharge" O L 9450 4100 50 
+F3 "OUTDischarge" O L 9450 4200 50 
+F4 "VCC" I R 10700 4100 50 
+F5 "GND" O R 10700 4200 50 
+F6 "VCharge" I R 10700 4300 50 
+F7 "GNDCharge" O R 10700 4400 50 
+F8 "CtrlCharge" I L 9450 4300 50 
+F9 "CtrlDischarge" I L 9450 4400 50 
+F10 "INChargeOK" I L 9450 4500 50 
+$EndSheet
+$Sheet
+S 9450 600  1250 800 
+U 5E152F4D
+F0 "sheet5E152F3F" 50
+F1 "BMS.sch" 50
+F2 "OUTCharge" O L 9450 700 50 
+F3 "OUTDischarge" O L 9450 800 50 
+F4 "VCC" I R 10700 700 50 
+F5 "GND" O R 10700 800 50 
+F6 "VCharge" I R 10700 900 50 
+F7 "GNDCharge" O R 10700 1000 50 
+F8 "CtrlCharge" I L 9450 900 50 
+F9 "CtrlDischarge" I L 9450 1000 50 
+F10 "INChargeOK" I L 9450 1100 50 
+$EndSheet
+Wire Wire Line
+	10700 2150 10900 2150
+Wire Wire Line
+	10900 2150 10900 2200
+$Sheet
+S 9450 1750 1250 800 
+U 5E167AFB
+F0 "sheet5E167AF0" 50
+F1 "BMS.sch" 50
+F2 "OUTCharge" O L 9450 1850 50 
+F3 "OUTDischarge" O L 9450 1950 50 
+F4 "VCC" I R 10700 1850 50 
+F5 "GND" O R 10700 1950 50 
+F6 "VCharge" I R 10700 2050 50 
+F7 "GNDCharge" O R 10700 2150 50 
+F8 "CtrlCharge" I L 9450 2050 50 
+F9 "CtrlDischarge" I L 9450 2150 50 
+F10 "INChargeOK" I L 9450 2250 50 
+$EndSheet
+Wire Wire Line
+	10900 3250 10900 3300
+Wire Wire Line
+	10700 3250 10900 3250
+$Sheet
+S 9450 2850 1250 800 
+U 5E169334
+F0 "sheet5E169329" 50
+F1 "BMS.sch" 50
+F2 "OUTCharge" O L 9450 2950 50 
+F3 "OUTDischarge" O L 9450 3050 50 
+F4 "VCC" I R 10700 2950 50 
+F5 "GND" O R 10700 3050 50 
+F6 "VCharge" I R 10700 3150 50 
+F7 "GNDCharge" O R 10700 3250 50 
+F8 "CtrlCharge" I L 9450 3150 50 
+F9 "CtrlDischarge" I L 9450 3250 50 
+F10 "INChargeOK" I L 9450 3350 50 
+$EndSheet
+Text GLabel 10900 1150 3    50   Output Italic 10
+GNDCharge
+Wire Wire Line
+	10700 1000 10900 1000
+Wire Wire Line
+	10900 1000 10900 1150
+Text GLabel 10900 2200 3    50   Output Italic 10
+GNDCharge
+Text GLabel 10900 3300 3    50   Output Italic 10
+GNDCharge
+Text GLabel 10900 4450 3    50   Output Italic 10
+GNDCharge
+$EndSCHEMATC

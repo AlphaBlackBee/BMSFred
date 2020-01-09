@@ -1,0 +1,13 @@
+(sym_lib_table
+  (lib (name Crystal32Mh)(type Legacy)(uri ${DIRLIB}/Crystal32MHz/KiCad/NX2016SA-32M-EXS00A-CS06465.lib)(options "")(descr ""))
+  (lib (name PorteFusible)(type Legacy)(uri ${DIRLIB}/PorteFusible/3101.0050.lib)(options "")(descr ""))
+  (lib (name STM32WBCEU6)(type Legacy)(uri ${DIRLIB}/STM32/STM32WB55CEU6.lib)(options "")(descr ""))
+  (lib (name STM32WBRGV6)(type Legacy)(uri ${DIRLIB}/STM32/STM32WB55RGV6.lib)(options "")(descr ""))
+  (lib (name Antenna)(type Legacy)(uri ${DIRLIB}/MyAntennas.pretty/MyAntennas.lib)(options "")(descr ""))
+  (lib (name Rescue)(type Legacy)(uri ${DIRLIB}/WattFred-rescue.lib)(options "")(descr ""))
+  (lib (name GPIO)(type Legacy)(uri ${DIRLIB}/GPIO/MAX7301AAI+/MAX7301AAI+.lib)(options "")(descr ""))
+  (lib (name CurrentCaptor)(type Legacy)(uri ${DIRLIB}/CapteurCourant/ACS780LLRTR-050U-T/ACS780LLRTR-050U-T.lib)(options "")(descr ""))
+  (lib (name LM2903Q)(type Legacy)(uri ${DIRLIB}/AOP/LM2903Q/LM2903YPT.lib)(options "")(descr ""))
+  (lib (name Comparator)(type Legacy)(uri ${DIRLIB}/AOP/MAX924ESE/MAX924ESET.lib)(options "")(descr ""))
+  (lib (name BattFred-rescue)(type Legacy)(uri ${KIPRJMOD}/BattFred-rescue.lib)(options "")(descr ""))
+)
